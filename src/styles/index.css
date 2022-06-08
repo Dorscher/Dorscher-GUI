@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.App {
+    height: 100vh;
+    width: 90vw;
+    max-width: 1500px;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.App-content {
+    flex: 1;
+}
+
+.App-navigation ul {
+    list-style-type: none;
+    overflow: hidden;
+    /* background-color: ; */
+}
+
+.App-navigation li {
+    float: left
+}
+
+.App-navigation li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.App-navigation li a:hover {
+    color: red;
+}
+
+.App-navigation li a.active {
+    color: white;
+    background: red;
+}
