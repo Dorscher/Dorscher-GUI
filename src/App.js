@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import LanePage from "./pages/LanePage";
+import MainPage from "./pages/MainPage";
 
 
 const App = () => {
@@ -16,7 +17,7 @@ const App = () => {
   return (
     <>
     <Routes>
-      <Route index element={(<h1>Main</h1>)} />
+      <Route path="/*" element={<MainPage />} />
       <Route path="lane/*" element={<LanePage />} />
     </Routes>
 

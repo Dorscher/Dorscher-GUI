@@ -1,0 +1,103 @@
+
+.Lane-container {
+    background-color: #111;
+    background-image: linear-gradient(to right, #111 1%, green, green, #111 99%);
+}
+
+.Lane-container .App {
+    /* border-left: 3px solid green;
+    border-right: 3px solid green; */
+    box-shadow: 0px 0px 60px lime;
+}
+
+
+.Lane-container .App-header {
+    background-color: greenyellow;
+    height: 150px;
+    
+    /* Center Elements*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* Text */
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 1rem;
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+    background-image: linear-gradient(#111, green, #111);
+    color: lime;
+
+}
+
+.Lane-container .App-navigation {
+    background-color: #111;
+    color: lime;
+}
+
+.Lane-container .App-navigation a{
+    color: lime;
+    /* border-right: 1px solid gray; */
+    min-width: fit-content;
+    width: 100px;
+}
+
+.Lane-container .App-navigation a:hover{
+    background-color: #333;
+    color: lime;
+}
+
+.Lane-container .App-navigation a.active{
+    background-color: lime;
+    color: green;
+    pointer-events:visible;
+}
+
+.Lane-container .App-content {
+    border-top: 2px solid green;
+    border-bottom: 2px solid green;
+    background-color: #333;
+}
+
+.Lane-container .App-footer {
+    background-color: #111;
+    color: lime;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1500px) {
+    
+    .Lane-container .App-header {
+        font-size: 2vw;
+
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    
+    .Lane-container .App-header {
+        font-size: 3vw; 
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    
+    .Lane-container .App-header p {
+        display: none;
+    }
+
+    .Lane-container .App-navigation a{
+        color: lime;
+        border-right: 1px solid gray;
+        width: 100vw;
+    }
+
+}
